@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    text-transform: capitalize;
+}
+:root{
+--background--: linear-gradient(to right, #eecda3, #ef629f); 
+--primary : #24243e;
+--secondary: #302b63;
+--tird: #0f0c29;
+--white-main--: #fff;
+--dark-white--: #0000009b;
+}
+
+.alice-carousel__dots-item{
+    background-image: linear-gradient(to right, #24243e57, #302b6352, #0f0c2940); 
+    width: 7px !important;
+    height: 7px !important;
+    font-size: 2rem;
+    bottom: -2rem !important;
+}
+.alice-carousel__dots-item.__active{
+    background: var(--background--);
+}
+.swiper-pagination-bullet{
+    background-image: var(--background--);
+}
+.sliderr .swiper-button-prev{
+    display: none;
+}
+.sliderr .swiper-button-next{
+    display: none;
+}
+
+.Product_slider{
+    background-color: none !important;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sliderr .alice-carousel__dots{
+    display: none;
+}
+.sliderr .alice-carousel__wrapper{
+    padding: 1rem 0;
+}
+
+@media (max-width:723px){
+    .MuiSvgIcon-root,
+    .MuiStepIcon-root{
+        height: 20px !important;
+    }
+    circle{
+        height: 20px !important;
+    }
+    .MuiStepLabel-label,
+    .css-1hv8oq8-MuiStepLabel-label,
+    .Mui-completed{
+        font-size: 12px !important;
+    }
+}
+@media (max-width:400px){
+    .MuiStepLabel-label,
+    .css-1hv8oq8-MuiStepLabel-label,
+    .Mui-completed{
+        font-size: 8px !important;
+    }
+}
+
+.home_Pages_slider_title{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.home_Pages_slider_discription{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+@media (max-width: 400px){
+    .home_Pages_slider_title{
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .home_Pages_slider_discription{
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
